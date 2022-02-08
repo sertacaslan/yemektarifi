@@ -1,0 +1,37 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="FinalOdevi2.Site1" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <link rel="stylesheet" href="style.css" />
+    <title></title>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+<div id="topdiv">
+        <a href="Default.aspx"><img src="assets/logo1.png" id="logo"/></a>
+        <asp:ContentPlaceHolder ID="head" runat="server">
+        </asp:ContentPlaceHolder>
+        <ul id="navmenu" runat="server">
+            
+            <a href="Default.aspx" class="nlink"><li class="navbtn">Anasayfa</li></a>
+            <a href="Addpage.aspx" class="nlink"><li class="navbtn" Id="additem" runat="server">Tarif ekle</li></a>
+            <a href="MyItems.aspx" class="nlink"><li class="navbtn" Id="itembtn" runat="server">Tariflerim</li></a>
+            <a href="Login.aspx" class="nlink"><li class="navbtn" Id="loginbtn" runat="server">Giriş Yap</li></a>
+            <a href="Register.aspx" class="nlink"><li class="navbtn" Id="regisbtn" runat="server">Üye ol</li></a><br />
+            <asp:Label ID="Label1" runat="server" Text=""></asp:Label><br /><asp:Button ID="Button1" runat="server" Text="Çıkış Yap" OnClick="Button1_Click" />
+        </ul>
+    </div>
+    <div id="rightdiv">    
+        
+        
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
